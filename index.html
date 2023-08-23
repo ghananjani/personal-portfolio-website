@@ -1,75 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="If-edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ghananjani Saini - Programmer, ML Enthusiast</title>
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Ghananjani Saini - A Student, ML Enthusiast and UI/UX Learner</title>
+  <meta name="title" content="Ghananjani Saini - A Student, ML Enthusiast and UI/UX Learner">
+  <meta name="description" content="Personal Portfolio.">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
 </head>
+
 <body>
-      <!-- header site -->
-      <header>
-        <div class="logo"><span>Ghananjani</span> Saini.</div>
-        <ul class="no-list-style"></ul>
-        <ul class="navlist">
-          <li><a heref="#home">Home</a></li>
-          <li><a heref="#about">About</a></li>
-          <li><a heref="#skills">Skills</a></li>
-          <li><a heref="#portfolio">Portfolio</a></li>
-          <li><a heref="#blog">Blog</a></li>
-          <li><a heref="#contact">Contact</a></li>
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="170" height="40" alt="Ghananjani home">
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggler data-nav-toggle-btn aria-label="Toggle menu">
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Resume</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Portfolio</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+
         </ul>
-      </header>
-      
+      </nav>
 
-      <section id="home" class="home">
-        <div class="home-content">
-          <h1>Hello! I am Ghananjani Saini
-          </h1>
-          <div class="change-text">
-            <h3>And I am a</h3>
-            <h3>
-            <span class="word"> Student </span>
-            <span class="word"> Web Designer </span>
-            <span class="word"> ML Enthusiast </span>
-            <span class="word"> UI/UX Developer </span>
-            <span class="word"> Writer </span>
-            </h3>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Ghananjani Saini</h1>
+
+            <p class="hero-subtitle">
+              ML Enthusiast and UI/UX Learner
+            </p>
+
+            <div class="hero-banner">
+              <img src="./assets/images/hero-banner.jpg" width="800" height="800" alt="kane williams" class="w-100">
+            </div>
+
+            <p class="section-text">
+              Hi, I'm Ghananjani Saini, a student of Vellore Institute of Technology, Bhopal. I am currently pursuing my Bachelor's in Computer Science and Engineering(Health Informatics).
+              I am currently working as a Research Intern at CSIO-CSIR,Chandigarh. 
+            </p>
+
+            <a href="#" class="btn has-before">
+              <span class="span">Download CV</span>
+
+              <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
 
         </div>
-        <p> I am currently pursuing my Bachelor's in Computer Science and Engineering (Health Infrmatics) From Vellore Institute of Technology </p>
-
-        <div class="info-box">
-          <div class="email-info">
-          <h5> Email: </h5>
-          <span> ghananjani@1803@gmail.com</span>
-        </div>
-        <div class="github-info">
-          <h5> Github: </h5>
-          <span> https://github.com/ghananjani </span>
-        </div>
-      </div>
-     <div class="btn-box">
-      <a href="a" class="btn"> Download Resume</a>
-      <a href="a" class="btn"> Hire Me Now!</a>
-     </div>
-    
-     <div class="social-icons">
-      <a href="#"><i class = 'bx bx1-instagram' > </i></a> 
-      <a href="#"><i class = 'bx bx1-linkedin' > </i></a> 
-     </div>
-
-     <div class="home-image">
-      <div class="img-box">
-        <img src="img/" alt="">
-      </div>
-     </div>
-
       </section>
 
-  <script src="script.js" ></script>
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" aria-labelledby="service-label">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <p class="section-subtitle">
+                Skill Set
+              </p>
+
+              <h2 class="h2 section-title" id="service-label">Skill Set</h2>
+            </div>
+
+            <p class="section-text">
+              I like to learn new things and experiment with my learnings. I have various hobbies like reading and painting apart from my techincal skills.
+              I like to implement and try to find a way to integrate my hobbies. 
+            </p>
+
+          </div>
+
+          <div class="slider" data-slider>
+
+            <ul class="slider-container service-list" data-slider-container>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="desktop-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Website Design</h3>
+
+                  <p class="card-text">
+                    Website design using HMTL,CSS and JavaScript is something I have started learning recently. I am still learning this domain.
+
+                  </p>
+
+                  <span class="text-lg card-number">01</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my website design service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="podium-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Machine Learning</h3>
+
+                  <p class="card-text">
+                    I have worked on various ML Moddels and have learned a lot in this domain. My skill set here include, Python, MATLAB, Sckit-learn, GANs, TensorFlow and PyTorch.
+                  </p>
+
+                  <span class="text-lg card-number">02</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my SEO Marketing service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="basket-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Content Writing</h3>
+
+                  <p class="card-text">
+                    I like to write about various topics and I don't limit myself in any genre. I hope to publish my blogs in this website soon.
+                  </p>
+
+                  <span class="text-lg card-number">03</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my eCommerce service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="color-filter-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Health Informatics</h3>
+
+                  <p class="card-text">
+                   I like the intersection between health and informatics and I have worked on various projects in this domain. I am keen to learn more about this domain.
+                  </p>
+
+                  <span class="text-lg card-number">04</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Graphic Design service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="megaphone-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">UI/UX Design</h3>
+
+                  <p class="card-text">
+                    I have found a way to create design using my creativity and my HTML/CSS knowledge. I am working on some mini projects in UI/UX Domain.
+                  </p>
+
+                  <span class="text-lg card-number">05</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Digital Marketing service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Reading</h3>
+
+                  <p class="card-text">
+                    I like to read novels in various domains. I believe that when you read a story, you live a life.
+                  </p>
+
+                  <span class="text-lg card-number">06</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Social Media service"></a>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <div class="slider-controls">
+              <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+
+              <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <!-- 
+        - #projects
+      -->
+
+      <section class="service" aria-labelledby="service-label">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <p class="section-subtitle">
+                Projects Completed
+              </p>
+
+              <h2 class="h2 section-title" id="service-label">Projects</h2>
+            </div>
+
+            <p class="section-text">
+              Here are some projects that I have worked on during my college and my internships. You can also find some personal projects here.
+            </p>
+
+          </div>
+
+          <div class="slider" data-slider>
+
+            <ul class="slider-container service-list" data-slider-container>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="desktop-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Brain Tumor Detection</h3>
+
+                  <p class="card-text">
+                   
+                   Engineered an innovative machine learning model capable of accurately identifying brain tumors through analysis of X-ray images. This groundbreaking solution was complemented by a meticulously designed UI/UX responsive website, ensuring seamless accessibility for users. 
+                   The synergy between advanced technology and user-centric design underscores our commitment to revolutionizing medical diagnostics.
+
+                  </p>
+
+                  <span class="text-lg card-number">01</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my website design service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="podium-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">MythBuster</h3>
+
+                  <p class="card-text">
+                    Envisioned, designed, and developed a dynamic mobile application aimed at dispelling misconceptions surrounding diverse diseases. Leveraged Flask for backend excellence, seamlessly integrating it with an intuitive UI/UX design. 
+                    Augmented user engagement through captivating videography, fostering a comprehensive platform that educates and empowers users to make informed health decisions.
+                  </p>
+
+                  <span class="text-lg card-number">02</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my SEO Marketing service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="basket-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Knee Osteoarthritis detection using GANs</h3>
+                  Leveraging Generative Adversarial Networks (GANs), we ingeniously expanded a limited dataset by generating a more extensive database. Employing state-of-the-art ML models. 
+                  We then harnessed this augmented dataset to effectively detect and diagnose knee osteoarthritis, thereby advancing the accuracy and reliability of medical diagnoses.
+                  <p class="card-text">
+                    
+                  </p>
+
+                  <span class="text-lg card-number">03</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my eCommerce service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="color-filter-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Resume Parser</h3>
+
+                  <p class="card-text">
+                    Developed an advanced resume parser utilizing natural language processing (NLP) techniques to extract and categorize key information from resumes accurately.
+                    Integrated machine learning algorithms to enhance parsing accuracy and efficiency, streamlining the recruitment process for optimal candidate assessment.
+                  </p>
+
+                  <span class="text-lg card-number">04</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Graphic Design service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="megaphone-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Emergency Situation Website</h3>
+
+                  <p class="card-text">
+                    Created a dynamic online platform tailored for emergency scenarios. Seamlessly integrating real-time updates, interactive maps, and comprehensive resources, this website serves as a crucial hub for users to access vital information during critical situations. 
+                    With a user-centric design and intuitive navigation, our solution empowers individuals to make informed decisions and take prompt actions during emergencies.
+                  </p>
+
+                  <span class="text-lg card-number">05</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Digital Marketing service"></a>
+
+                </div>
+              </li>
+
+              <li class="slider-item" data-slider-item>
+                <div class="service-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                  </div>
+
+                  <h3 class="h3 card-title">Blood Donation Prediction using ML</h3>
+
+                  <p class="card-text">
+                    Designed and developed a predictive machine learning model to forecast blood donation patterns. By analyzing historical data and incorporating relevant features, the model accurately anticipates future donation trends. 
+                    This innovative solution not only aids blood banks in resource allocation but also contributes to saving lives by ensuring a consistent and reliable blood supply.
+                  </p>
+
+                  <span class="text-lg card-number">06</span>
+
+                  <a href="#" class="layer-link" aria-label="More about my Social Media service"></a>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <div class="slider-controls">
+              <button class="slider-control prev" data-slider-prev aria-label="Slide to previous item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+
+              <button class="slider-control next" data-slider-next aria-label="Slide to next item">
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" aria-labelledby="blog-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="blog-label">Recent Articles</p>
+
+          <h2 class="h2 section-title">Coming Soon</h2>
+
+          
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in touch</p>
+        </li>
+
+        <li>
+          <a href="mailto:info@kwilliams.com" class="footer-link">ghananjani1803@gmail.com</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Locations</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Pune - Maharashtra</a>
+        </li>
+
+      </ul>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-dribbble"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-skype"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>
